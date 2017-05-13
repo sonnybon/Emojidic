@@ -57,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🏙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXs-4w-OZS">
-                                <rect key="frame" x="78.5" y="104" width="218" height="239"/>
+                                <rect key="frame" x="79" y="104" width="218" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -68,18 +68,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category : animal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKn-El-Fea">
+                                <rect key="frame" x="132" y="452" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year : 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C81-u7-m67">
+                                <rect key="frame" x="132" y="481" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="LKn-El-Fea" firstAttribute="top" secondItem="cco-Zh-W5G" secondAttribute="bottom" constant="8" id="3gF-3F-Bsg"/>
+                            <constraint firstItem="C81-u7-m67" firstAttribute="top" secondItem="LKn-El-Fea" secondAttribute="bottom" constant="8" id="4P0-zi-kBc"/>
                             <constraint firstItem="cco-Zh-W5G" firstAttribute="centerX" secondItem="QGM-Ef-uKB" secondAttribute="centerX" id="8xr-OA-H46"/>
                             <constraint firstItem="hXs-4w-OZS" firstAttribute="top" secondItem="FAI-BE-z4g" secondAttribute="bottom" constant="40" id="C9g-Uh-FLU"/>
+                            <constraint firstItem="LKn-El-Fea" firstAttribute="leading" secondItem="cco-Zh-W5G" secondAttribute="leading" id="MlZ-Yd-O3A"/>
+                            <constraint firstItem="LKn-El-Fea" firstAttribute="leading" secondItem="C81-u7-m67" secondAttribute="leading" id="RHM-pr-yBw"/>
                             <constraint firstItem="cco-Zh-W5G" firstAttribute="top" secondItem="hXs-4w-OZS" secondAttribute="bottom" constant="80" id="fvv-xC-2yB"/>
+                            <constraint firstItem="LKn-El-Fea" firstAttribute="top" secondItem="cco-Zh-W5G" secondAttribute="bottom" constant="8" id="hrD-yw-Rje"/>
                             <constraint firstItem="hXs-4w-OZS" firstAttribute="centerX" secondItem="QGM-Ef-uKB" secondAttribute="centerX" id="sHk-ru-aZx"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bigEmoji" destination="hXs-4w-OZS" id="gl4-Z8-RqT"/>
-                        <outlet property="explainLabel" destination="cco-Zh-W5G" id="oam-LT-Qrd"/>
+                        <outlet property="bigEmoji" destination="hXs-4w-OZS" id="bWh-uQ-Fvi"/>
+                        <outlet property="birthYearLabel" destination="C81-u7-m67" id="nGk-FY-uz0"/>
+                        <outlet property="categoryLabel" destination="LKn-El-Fea" id="zHm-Hg-46z"/>
+                        <outlet property="explainLabel" destination="cco-Zh-W5G" id="YpO-Kd-cXj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w5d-2F-aXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
